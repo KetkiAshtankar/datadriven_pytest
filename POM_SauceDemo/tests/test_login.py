@@ -5,7 +5,8 @@ from pages.login_page import LoginPage
 
 def get_login_data():
     login_data = []
-    with open('data/login_data.csv', newline='') as file:
+    # with open('data/login_data.csv', newline='') as file:
+    with open('POM_SauceDemo/data/login_data.csv', newline='') as file:
         reader = csv.DictReader(file)
         for row in reader:
             # Ensure each row is treated as a dictionary
